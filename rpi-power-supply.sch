@@ -1,0 +1,539 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:rpi-shutdown-pcb
+LIBS:rpi-shutdown-pcb-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P IC1
+U 1 1 58B37326
+P 6400 4600
+F 0 "IC1" H 5250 5000 50  0000 C CNN
+F 1 "ATTINY85-P" H 7400 4200 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 7400 4600 50  0001 C CIN
+F 3 "" H 6400 4600 50  0000 C CNN
+	1    6400 4600
+	1    0    0    -1  
+$EndComp
+Text Notes 1200 1850 2    60   ~ 0
+Vbatt
+Text Notes 1200 1950 2    60   ~ 0
+GND
+Text Notes 1200 2050 2    60   ~ 0
+IGN
+$Comp
+L CONN_01X02 P2
+U 1 1 58B37FED
+P 9300 4050
+F 0 "P2" H 9300 4200 50  0000 C CNN
+F 1 "CONN_01X02" H 9300 3900 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:2_PADS_FOR_18_AWG_WIRE" H 9300 4050 50  0001 C CNN
+F 3 "" H 9300 4050 50  0000 C CNN
+	1    9300 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 9400 4050 0    60   ~ 0
+Vout+
+Text Notes 9400 4150 0    60   ~ 0
+Vout-
+$Comp
+L MOSFET_N_(2N7002P,215) Q1
+U 1 1 58C6CAF3
+P 3900 5350
+F 0 "Q1" H 4150 5425 50  0000 L CNN
+F 1 "MOSFET_N_(2N7002P,215)" H 4150 5350 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 4150 5275 50  0001 L CIN
+F 3 "" H 3900 5350 50  0000 L CNN
+	1    3900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM3480-3.3 U1
+U 1 1 58C6CBCA
+P 2950 3900
+F 0 "U1" H 2650 4050 50  0000 L CNN
+F 1 "LM3480-3.3" H 3250 4050 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2950 3500 50  0001 C CIN
+F 3 "" H 2950 3900 50  0000 C CNN
+	1    2950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58C6CE0F
+P 2950 6250
+F 0 "#PWR01" H 2950 6000 50  0001 C CNN
+F 1 "GND" H 2950 6100 50  0000 C CNN
+F 2 "" H 2950 6250 50  0000 C CNN
+F 3 "" H 2950 6250 50  0000 C CNN
+	1    2950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58C6CE73
+P 2300 4200
+F 0 "C1" H 2325 4300 50  0000 L CNN
+F 1 "0.1uF" H 2325 4100 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" H 2338 4050 50  0001 C CNN
+F 3 "" H 2300 4200 50  0000 C CNN
+	1    2300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58C6CF22
+P 3650 4200
+F 0 "C2" H 3675 4300 50  0000 L CNN
+F 1 "0.1uF" H 3675 4100 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" H 3688 4050 50  0001 C CNN
+F 3 "" H 3650 4200 50  0000 C CNN
+	1    3650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58C6D252
+P 3500 5400
+F 0 "R2" V 3580 5400 50  0000 C CNN
+F 1 "150" V 3500 5400 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 3430 5400 50  0001 C CNN
+F 3 "" H 3500 5400 50  0000 C CNN
+	1    3500 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 58C6D2D3
+P 4000 4800
+F 0 "R3" V 4080 4800 50  0000 C CNN
+F 1 "100k" V 4000 4800 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 3930 4800 50  0001 C CNN
+F 3 "" H 4000 4800 50  0000 C CNN
+	1    4000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58C6E5AF
+P 3200 5700
+F 0 "R1" V 3280 5700 50  0000 C CNN
+F 1 "100k" V 3200 5700 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 3130 5700 50  0001 C CNN
+F 3 "" H 3200 5700 50  0000 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 58DAF009
+P 4550 5000
+F 0 "R6" V 4630 5000 50  0000 C CNN
+F 1 "100k" V 4550 5000 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 4480 5000 50  0001 C CNN
+F 3 "" H 4550 5000 50  0000 C CNN
+	1    4550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L STEP_DOWN_CONVERTER_(MP2307) IC2
+U 1 1 594081C5
+P 6200 1950
+F 0 "IC2" H 5900 2250 50  0000 C CNN
+F 1 "STEP_DOWN_CONVERTER_(MP2307)" H 6200 1650 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:SOIC8N_(EXPOSED_PAD)" H 6200 1550 50  0001 C CIN
+F 3 "" H 6200 1950 50  0000 C CNN
+	1    6200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 59408304
+P 2300 1800
+F 0 "D1" H 2300 1900 50  0000 C CNN
+F 1 "D_Schottky" H 2300 1700 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:DO-214AB" H 2300 1800 50  0001 C CNN
+F 3 "" H 2300 1800 50  0001 C CNN
+	1    2300 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 4200 2950 6250
+Wire Wire Line
+	1950 1900 1950 4550
+Wire Wire Line
+	1950 4550 3650 4550
+Connection ~ 2950 4550
+Wire Wire Line
+	2300 4350 2300 4550
+Connection ~ 2300 4550
+Connection ~ 2300 3900
+Wire Wire Line
+	3650 4550 3650 4350
+Wire Wire Line
+	3450 3900 7850 3900
+Wire Wire Line
+	3650 3900 3650 4050
+Wire Wire Line
+	7850 3900 7850 4350
+Wire Wire Line
+	7850 4350 7750 4350
+Connection ~ 3650 3900
+Wire Wire Line
+	7750 4850 7850 4850
+Wire Wire Line
+	7850 4850 7850 6050
+Connection ~ 2950 6050
+Wire Wire Line
+	4000 6050 4000 5550
+Connection ~ 4000 6050
+Wire Wire Line
+	3650 5400 3700 5400
+Wire Wire Line
+	1800 5400 3350 5400
+Wire Wire Line
+	1800 2000 1800 5400
+Wire Wire Line
+	4000 4950 4000 5150
+Wire Wire Line
+	4000 4650 4000 3900
+Connection ~ 4000 3900
+Wire Wire Line
+	4000 5050 4300 5050
+Wire Wire Line
+	4300 5050 4300 4350
+Wire Wire Line
+	4300 4350 5050 4350
+Connection ~ 4000 5050
+Connection ~ 7850 6050
+Wire Wire Line
+	9000 6050 9000 4100
+Wire Wire Line
+	3200 5550 3200 5400
+Connection ~ 3200 5400
+Wire Wire Line
+	3200 5850 3200 6050
+Connection ~ 3200 6050
+Wire Wire Line
+	2950 6050 10400 6050
+Wire Wire Line
+	9000 4100 9100 4100
+Wire Wire Line
+	2300 2950 2300 4050
+Wire Wire Line
+	1500 1800 2150 1800
+$Comp
+L Polyfuse F1
+U 1 1 594083F6
+P 2900 1800
+F 0 "F1" V 2800 1800 50  0000 C CNN
+F 1 "Polyfuse" V 3000 1800 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1812_HandSoldering" H 2950 1600 50  0001 L CNN
+F 3 "" H 2900 1800 50  0001 C CNN
+	1    2900 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1800 2750 1800
+Wire Wire Line
+	3050 1800 5700 1800
+Wire Wire Line
+	2300 2950 3350 2950
+Wire Wire Line
+	3350 2950 3350 1800
+Connection ~ 3350 1800
+Wire Wire Line
+	2450 3900 2300 3900
+Wire Wire Line
+	1950 1900 1500 1900
+Wire Wire Line
+	1800 2000 1500 2000
+Wire Wire Line
+	5700 2100 5400 2100
+Wire Wire Line
+	5400 2100 5400 3400
+Wire Wire Line
+	1950 3400 8100 3400
+Connection ~ 1950 3400
+NoConn ~ 5700 2000
+NoConn ~ 5050 4650
+NoConn ~ 5050 4750
+NoConn ~ 5050 4850
+$Comp
+L C C3
+U 1 1 59408836
+P 3950 2600
+F 0 "C3" H 3975 2700 50  0000 L CNN
+F 1 "10uF" H 3975 2500 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" H 3988 2450 50  0001 C CNN
+F 3 "" H 3950 2600 50  0000 C CNN
+	1    3950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5940899C
+P 4400 2600
+F 0 "C4" H 4425 2700 50  0000 L CNN
+F 1 "10uF" H 4425 2500 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" H 4438 2450 50  0001 C CNN
+F 3 "" H 4400 2600 50  0000 C CNN
+	1    4400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2450 3950 1800
+Connection ~ 3950 1800
+Wire Wire Line
+	4400 2450 4400 1800
+Connection ~ 4400 1800
+Wire Wire Line
+	3950 2750 3950 3400
+Connection ~ 3950 3400
+Wire Wire Line
+	4400 2750 4400 3400
+Connection ~ 4400 3400
+$Comp
+L L L1
+U 1 1 59408B26
+P 7800 1900
+F 0 "L1" V 7750 1900 50  0000 C CNN
+F 1 "10uH" V 7875 1900 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:INDUCTOR_10uH_(ASPI-0630LR)" H 7800 1900 50  0001 C CNN
+F 3 "" H 7800 1900 50  0001 C CNN
+	1    7800 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 1900 7650 1900
+Wire Wire Line
+	7950 1900 10400 1900
+Wire Wire Line
+	9000 1900 9000 4000
+Wire Wire Line
+	9000 4000 9100 4000
+$Comp
+L C C6
+U 1 1 59408D82
+P 7200 1550
+F 0 "C6" V 7050 1500 50  0000 L CNN
+F 1 "10nF" V 7350 1450 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:C_0805_HandSoldering_(narrow)" H 7238 1400 50  0001 C CNN
+F 3 "" H 7200 1550 50  0000 C CNN
+	1    7200 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 1800 6900 1800
+Wire Wire Line
+	6900 1800 6900 1550
+Wire Wire Line
+	6900 1550 7050 1550
+Wire Wire Line
+	7350 1550 7550 1550
+Wire Wire Line
+	7550 1550 7550 1900
+Connection ~ 7550 1900
+$Comp
+L R R7
+U 1 1 594090A3
+P 7550 2500
+F 0 "R7" V 7630 2500 50  0000 C CNN
+F 1 "2.2K" V 7550 2500 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 7480 2500 50  0001 C CNN
+F 3 "" H 7550 2500 50  0000 C CNN
+	1    7550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5940914B
+P 7800 2200
+F 0 "R8" V 7880 2200 50  0000 C CNN
+F 1 "10k" V 7800 2200 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 7730 2200 50  0001 C CNN
+F 3 "" H 7800 2200 50  0000 C CNN
+	1    7800 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 2000 7550 2000
+Wire Wire Line
+	7550 2000 7550 2350
+Wire Wire Line
+	7650 2200 7550 2200
+Connection ~ 7550 2200
+Wire Wire Line
+	7950 2200 8100 2200
+Wire Wire Line
+	8100 1900 8100 2350
+Connection ~ 8100 1900
+$Comp
+L C C7
+U 1 1 594092E5
+P 8100 2500
+F 0 "C7" H 8125 2600 50  0000 L CNN
+F 1 "33uF" H 8125 2400 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" H 8138 2350 50  0001 C CNN
+F 3 "" H 8100 2500 50  0000 C CNN
+	1    8100 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 2200
+Wire Wire Line
+	7550 3400 7550 2650
+Connection ~ 5400 3400
+Wire Wire Line
+	8100 3400 8100 2650
+Connection ~ 7550 3400
+$Comp
+L C C5
+U 1 1 594095C1
+P 7100 2500
+F 0 "C5" H 7125 2600 50  0000 L CNN
+F 1 "3.9nF" H 7125 2400 50  0000 L CNN
+F 2 "rpi-shutdown-pcb:C_0805_HandSoldering_(narrow)" H 7138 2350 50  0001 C CNN
+F 3 "" H 7100 2500 50  0000 C CNN
+	1    7100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2100 7100 2100
+Wire Wire Line
+	7100 2100 7100 2350
+$Comp
+L R R5
+U 1 1 594096B5
+P 7100 3000
+F 0 "R5" V 7180 3000 50  0000 C CNN
+F 1 "6.8K" V 7100 3000 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 7030 3000 50  0001 C CNN
+F 3 "" H 7100 3000 50  0000 C CNN
+	1    7100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2650 7100 2850
+Wire Wire Line
+	7100 3150 7100 3400
+Connection ~ 7100 3400
+Wire Wire Line
+	4850 1900 5700 1900
+Wire Wire Line
+	5050 4450 4850 4450
+Wire Wire Line
+	4850 1900 4850 4850
+Wire Wire Line
+	5050 4550 4550 4550
+Wire Wire Line
+	4550 3600 4550 4850
+Wire Wire Line
+	4550 5150 4550 6050
+Connection ~ 4550 6050
+Connection ~ 4550 4550
+$Comp
+L R R4
+U 1 1 5941BD2C
+P 4850 5000
+F 0 "R4" V 4930 5000 50  0000 C CNN
+F 1 "100k" V 4850 5000 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:R_1206_HandSoldering_(narrow)" V 4780 5000 50  0001 C CNN
+F 3 "" H 4850 5000 50  0000 C CNN
+	1    4850 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 4450
+Wire Wire Line
+	4850 5150 4850 6050
+Connection ~ 4850 6050
+$Comp
+L CONN_01X03 P1
+U 1 1 5941C28A
+P 1300 1900
+F 0 "P1" H 1300 2100 50  0000 C CNN
+F 1 "CONN_01X03" H 1300 1700 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:3_PADS_FOR_18_AWG_WIRE" H 1300 1900 50  0001 C CNN
+F 3 "" H 1300 1900 50  0001 C CNN
+	1    1300 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3600 8650 3600
+$Comp
+L CONN_02X10 CONN_1
+U 1 1 5941D888
+P 9900 2900
+F 0 "CONN_1" H 9900 3450 50  0000 C CNN
+F 1 "CONN_02X10" V 9900 2900 50  0000 C CNN
+F 2 "rpi-shutdown-pcb:HEADER_20_PIN_FEMALE_(PPTC102LFBN-RC)" H 9900 1700 50  0001 C CNN
+F 3 "" H 9900 1700 50  0001 C CNN
+	1    9900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2950 8650 2950
+Wire Wire Line
+	8650 2950 8650 3600
+Wire Wire Line
+	10400 1900 10400 2550
+Wire Wire Line
+	10400 2450 10150 2450
+Connection ~ 9000 1900
+Wire Wire Line
+	10400 6050 10400 2650
+Wire Wire Line
+	10400 2650 10150 2650
+Connection ~ 9000 6050
+Text Notes 9250 2950 0    60   ~ 0
+GPIO17
+Text Notes 10500 2500 0    60   ~ 0
++5V
+Text Notes 10500 2700 0    60   ~ 0
+GND
+Wire Wire Line
+	10150 3050 10400 3050
+Connection ~ 10400 3050
+Wire Wire Line
+	10400 2550 10150 2550
+Connection ~ 10400 2450
+$EndSCHEMATC
