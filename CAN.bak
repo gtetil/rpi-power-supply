@@ -162,7 +162,7 @@ $EndComp
 Wire Wire Line
 	4750 4450 4750 4700
 Text GLabel 5500 3650 2    60   Input ~ 0
-INT
+PI_INT
 Wire Wire Line
 	5350 3650 5500 3650
 NoConn ~ 5350 3750
