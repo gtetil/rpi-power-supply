@@ -13,7 +13,7 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 12,STEP_DOWN_CONVERTER_(MP2307),RTC_(DS3231),IC3,RTC_(DS3231),SOIC-16W_7.5x12.8mm_Pitch1.27mm,1,http://www.mouser.com/ds/2/277/MP2307_r1.9-371737.pdf
 13,STEP_DOWN_CONVERTER_(MP2307),STEP_DOWN_CONVERTER_(MP2307),IC2,STEP_DOWN_CONVERTER_(MP2307),SOIC8N_(EXPOSED_PAD),1,http://www.mouser.com/ds/2/277/MP2307_r1.9-371737.pdf
 14,"Connector, double row, 02x03, pin header",CONN_02X03,ICSP_1,CONN_02X03,Pin_Header_Straight_2x03_Pitch2.54mm_SMD,1,
-15,expansion header for Raspberry Pi 2 & 3,Raspberry_Pi_2_3,J2,Raspberry_Pi_2_3,Pin_Header_Straight_2x20,1,https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf
+15,expansion header for Raspberry Pi 2 & 3,Raspberry_Pi_2_3,CONN_1,Raspberry_Pi_2_3,Pin_Header_Straight_2x20,1,https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/RPI-3B-V1_2-SCHEMATIC-REDUCED.pdf
 16,Inductor,L,L1,10uH,INDUCTOR_10uH_(ASPI-0630LR),1,
 17,,"MOSFET_N_(2N7002P,215)",Q1,"MOSFET_N_(2N7002P,215)",SOT-23,1,
 18,Resistor,R,"R1, R3, R4, R6",100k,R_0805,4,
@@ -28,18 +28,18 @@ Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
 27,"Stand-Alone CAN Controller with SPI Interface, SOIC-18, Extended temperature range",MCP2515T-I/SO,U2,MCP2515T-I/SO,SOIC-18W_7.5x11.6mm_Pitch1.27mm,1,http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
 28,"High-Speed CAN Transceiver, 1Mbps, 5V supply, SOIC8 package",MCP2551-I/SN,U3,MCP2551-I/SN,SOIC-8_3.9x4.9mm_Pitch1.27mm,1,http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf
 29,Two pin crystal,Crystal,Y1,Crystal,Crystal_SMD_HC49-SD,1,
-
-
-
-
-
-Component Groups:,29
-Component Count:,48
-Fitted Components:,48
-Number of PCBs:,1
-Total components:,48
-Schematic Version:,
-Schematic Date:,
-BoM Date:,4/16/2018 2:53:36 PM
-Schematic Source:,C:\Users\gtetil\Documents\Projects\rpi-power-supply\rpi-power-supply.sch
-KiCad Version:,Eeschema 4.0.6
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+Component Groups:,29,,,,,,
+Component Count:,48,,,,,,
+Fitted Components:,48,,,,,,
+Number of PCBs:,1,,,,,,
+Total components:,48,,,,,,
+Schematic Version:,,,,,,,
+Schematic Date:,,,,,,,
+BoM Date:,4/16/2018 14:53,,,,,,
+Schematic Source:,C:\Users\gtetil\Documents\Projects\rpi-power-supply\rpi-power-supply.sch,,,,,,
+KiCad Version:,Eeschema 4.0.6,,,,,,

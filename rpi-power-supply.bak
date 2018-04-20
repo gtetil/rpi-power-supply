@@ -312,7 +312,7 @@ U 1 1 5AD4C8EE
 P 9550 4000
 F 0 "CONN_1" H 10250 2750 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 9150 4900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm_SMD" H 10550 5250 50  0001 C CNN
+F 2 "rpi-power-supply:Pin_Header_Straight_2x20_Pitch2.54mm_SMD_(mirrored)" H 10550 5250 50  0001 C CNN
 F 3 "" H 9600 3850 50  0001 C CNN
 	1    9550 4000
 	1    0    0    -1  
@@ -359,7 +359,7 @@ U 1 1 5AD53CD6
 P 1550 6700
 F 0 "ICSP_1" H 1550 6900 50  0000 C CNN
 F 1 "CONN_02X03" H 1550 6500 50  0001 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm_SMD" H 1550 5500 50  0001 C CNN
+F 2 "rpi-power-supply:2X3_HEADER_SMD_HORIZONTAL" H 1550 5500 50  0001 C CNN
 F 3 "" H 1550 5500 50  0001 C CNN
 	1    1550 6700
 	1    0    0    -1  
